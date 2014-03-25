@@ -2,7 +2,7 @@
 
 Name: winexe
 Version: 1.1
-Release: 0.2%{?dist}
+Release: 1%{?dist}
 License: GPLv3+
 URL: http://sourceforge.net/projects/winexe/
 Summary: Remote Windows-command executor
@@ -44,6 +44,18 @@ cd source
 
 
 %changelog
+* Tue Mar 25 2014 Tomas Edwardsson <tommi@tommi.org> 1.1-1
+- Removed checkout (tommi@tommi.org)
+- Updated changelog (tommi@tommi.org)
+- Remove patch, already applied (tommi@tommi.org)
+- tito releaser configuration added (tommi@tommi.org)
+
+* Tue Mar 25 2014 Tomas Edwardsson <tommi@tommi.org>
+- Removed checkout (tommi@tommi.org)
+- Updated changelog (tommi@tommi.org)
+- Remove patch, already applied (tommi@tommi.org)
+- tito releaser configuration added (tommi@tommi.org)
+
 * Tue Mar 25 2014 Tomas Edwardsson <tommi@tommi.org>
 - Remove patch, already applied (tommi@tommi.org)
 - tito releaser configuration added (tommi@tommi.org)
