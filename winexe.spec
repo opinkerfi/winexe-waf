@@ -1,14 +1,13 @@
-%global checkout 20140208gitb787d2a
 
 
 Name: winexe
 Version: 1.1
-Release: 0.2.%{checkout}%{?dist}
+Release: 0.2%{?dist}
 License: GPLv3+
 URL: http://sourceforge.net/projects/winexe/
 Summary: Remote Windows-command executor
 
-Source0: %{name}-%{checkout}.tar.bz2
+Source0: %{name}.tar.bz2
 
 BuildRequires: mingw32-gcc
 BuildRequires: mingw64-gcc
@@ -22,7 +21,7 @@ Winexe remotely executes commands on Windows systems.
 
 
 %prep
-%setup -q -n %{name}-%{checkout}
+%setup -q -n %{name}
 
 
 %build
