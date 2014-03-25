@@ -1,0 +1,17 @@
+diff -u -r winexe-20140208gitb787d2a/source/wscript_build winexe-20140208gitb787d2a.waf/source/wscript_build
+--- winexe-20140208gitb787d2a/source/wscript_build	2014-01-08 07:08:34.000000000 +0900
++++ winexe-20140208gitb787d2a.waf/source/wscript_build	2014-02-08 10:59:44.538914216 +0900
+@@ -23,11 +23,11 @@
+     cflags='',
+     install_path=None)
+ 
+-bld(name="bin2c", rule='${SRC[0].abspath()} winexesvc32_exe ${SRC[1]} > ${TGT} 2>/dev/null',
++bld(rule='${SRC[0].abspath()} winexesvc32_exe ${SRC[1]} > ${TGT} 2>/dev/null',
+     target='winexesvc32_exe.c',
+     source='bin2c winexesvc32.exe')
+ 
+-bld(name="bin2c", rule='${SRC[0].abspath()} winexesvc64_exe ${SRC[1]} > ${TGT} 2>/dev/null',
++bld(rule='${SRC[0].abspath()} winexesvc64_exe ${SRC[1]} > ${TGT} 2>/dev/null',
+     target='winexesvc64_exe.c',
+     source='bin2c winexesvc64.exe')
+ 

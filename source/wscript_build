@@ -23,11 +23,11 @@ bld.program(target='bin2c',
     cflags='',
     install_path=None)
 
-bld(name="bin2c", rule='${SRC[0].abspath()} winexesvc32_exe ${SRC[1]} > ${TGT} 2>/dev/null',
+bld(rule='${SRC[0].abspath()} winexesvc32_exe ${SRC[1]} > ${TGT} 2>/dev/null',
     target='winexesvc32_exe.c',
     source='bin2c winexesvc32.exe')
 
-bld(name="bin2c", rule='${SRC[0].abspath()} winexesvc64_exe ${SRC[1]} > ${TGT} 2>/dev/null',
+bld(rule='${SRC[0].abspath()} winexesvc64_exe ${SRC[1]} > ${TGT} 2>/dev/null',
     target='winexesvc64_exe.c',
     source='bin2c winexesvc64.exe')
 
