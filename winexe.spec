@@ -9,7 +9,6 @@ URL: http://sourceforge.net/projects/winexe/
 Summary: Remote Windows-command executor
 
 Source0: %{name}-%{checkout}.tar.bz2
-Patch0: %{name}-%{checkout}-waf.patch
 
 BuildRequires: mingw32-gcc
 BuildRequires: mingw64-gcc
@@ -24,7 +23,6 @@ Winexe remotely executes commands on Windows systems.
 
 %prep
 %setup -q -n %{name}-%{checkout}
-%patch0 -p1
 
 
 %build
