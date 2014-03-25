@@ -47,6 +47,9 @@ cd source
 
 
 %changelog
+* Tue Mar 25 2014 Tomas Edwardsson <tommi@tommi.org> 1.1-0.2.20140208gitb787d2a
+- new package built with tito
+
 * Tue Feb 11 2014 Satoshi Matsumoto <kaorimatz@gmail.com> - 1.1-0.2.20140208gitb787d2a
 - Fix license to GPLv3+
 
