@@ -2,7 +2,7 @@
 
 Name: winexe
 Version: 1.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: GPLv3+
 URL: http://sourceforge.net/projects/winexe/
 Summary: Remote Windows-command executor
@@ -44,6 +44,10 @@ cd source
 
 
 %changelog
+* Fri May 20 2016 Gardar Thorsteinsson <gardart@gmail.com> 1.1-2
+- Patch added to fix new Samba4 library names
+- new package built with tito
+
 * Tue Mar 25 2014 Tomas Edwardsson <tommi@tommi.org> 1.1-1
 - Removed checkout (tommi@tommi.org)
 - Updated changelog (tommi@tommi.org)
