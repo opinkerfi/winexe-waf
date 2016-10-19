@@ -69,6 +69,11 @@ Important: make sure that libbsd-devel is *not* installed.
     yum remove \
         libbsd-devel
 
+Clone this repo
+
+    git clone https://github.com/opinkerfi/winexe-waf
+    cd winexe-waf
+
 Obtain the Samba source code.
 
     git clone git://git.samba.org/samba.git samba
