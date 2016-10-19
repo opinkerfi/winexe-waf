@@ -37,8 +37,7 @@ On RedHat-like distros including those in the following list, install
 dependencies.
 
     * Fedora 18
-    * CentOS 6 with added EPEL repo and lfarkas's repo
-      (http://www.lfarkas.org/linux/packages/centos/6/mingw-w64/)
+    * CentOS 6 with added EPEL repo
 
     yum install \
         gcc \
