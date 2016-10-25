@@ -37,8 +37,7 @@ On RedHat-like distros including those in the following list, install
 dependencies.
 
     * Fedora 18
-    * CentOS 6 with added EPEL repo and lfarkas's repo
-      (http://www.lfarkas.org/linux/packages/centos/6/mingw-w64/)
+    * CentOS 6 with added EPEL repo
 
     yum install \
         gcc \
@@ -70,9 +69,21 @@ Important: make sure that libbsd-devel is *not* installed.
     yum remove \
         libbsd-devel
 
+Clone this repo
+
+    git clone https://github.com/opinkerfi/winexe-waf
+    cd winexe-waf
+
 Obtain the Samba source code.
 
     git clone git://git.samba.org/samba.git samba
+    
+On Centos 6, static .a libs are not provided (see https://sourceforge.net/p/winexe/bugs/64/)
+    cd samba
+    git reset --hard a6bda1f2bc85779feb9680bc74821da5ccd401c5
+    cd ..
+    sed -i "s/lib='dl'$/lib='dl gnutls'/" source/wscript_build
+
 
 Build. The argument of the "samba-dir" option is the path to the samba
 source tree that was just obtained. The "configure" step takes a long
