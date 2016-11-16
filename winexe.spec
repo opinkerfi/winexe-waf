@@ -2,7 +2,7 @@
 
 Name: winexe
 Version: 1.1
-Release: 2%{?dist}
+Release: 3%{?dist}
 License: GPLv3+
 URL: http://sourceforge.net/projects/winexe/
 Summary: Remote Windows-command executor
