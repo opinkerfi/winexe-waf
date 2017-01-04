@@ -58,6 +58,7 @@ dependencies.
         mingw64-headers \
         libcom_err-devel \
         libacl-devel \
+        gnutls-devel \
         openldap-devel \
         popt-devel \
         zlib-devel \
