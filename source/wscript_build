@@ -51,5 +51,5 @@ if bld.env.SAMBA_DIR:
         linkflags='-pthread',
         stlibpath=bld.srcnode.abspath() + '/smb_static/build',
         stlib='smb_static bsd z resolv rt',
-        lib='dl'
+        lib='dl gnutls'       
         )
